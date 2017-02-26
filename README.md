@@ -6,5 +6,5 @@ This is a collection of functions and other useful things when you want to do so
 
 it currently has:
 
- - Number divider into numerals(named numerals)
- - primefinder(named primefinder)
+ - a numeral divider(in ownmath.py)
+ - primefinders in ownmath.py and sieve_of_erath.py(it's a Sieve of Erathosthenes)

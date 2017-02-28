@@ -21,7 +21,7 @@ def primefinder(prime):
    #test cases fo this shit if it works IT WORKS 
 """for k in range(150):
     
-    print str(k)+ " is a prime?" +str(primefinder(k))
+    print(str(k)+ " is a prime?" +str(primefinder(k)))
      
   """  
 def numerals(num):
@@ -37,18 +37,22 @@ def numerals(num):
       
       return retlist
      
-print numerals(3123124124)
+print(numerals(3123124124))
 
 def euclidian_divisor(firstnum,secondnum):
-    """gets two numbers and returns their greatest common divisor very fast"""
-#    if(firstnum > secondnum):
-#        divide = firstnum
-#        divisor = secondnum
-#        while(divisor != 0):
-#          divisor2 = divide % divisor
-#          divide = divisor
-#          
-#    return divide
-#    
-#print euclidian_divisor(6,9)
-#needs attention tomoroww
+     """gets two numbers and returns their greatest common divisor very fast"""
+     if(firstnum > secondnum):
+        divide = firstnum
+        divisor = secondnum
+     else:
+        divide = secondnum
+        divisor = firstnum
+     while(divisor != 0):
+          divisor2 = divisor
+          divisor = divide % divisor
+          divide = divisor2
+          print(divide,divisor,divisor2)
+     return divide
+    
+print (euclidian_divisor(6,9))
+
